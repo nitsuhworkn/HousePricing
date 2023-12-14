@@ -3,3 +3,4 @@ sklearn
 pandas
 numpay
 matplotlib
+ipykernel
