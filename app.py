@@ -6,7 +6,7 @@ import pandas as pd
 app=Flask(__name__)
 # load model
 REGmodel=pickle.load(open('Regretionmodel.pkl','rb'))
-scalar=pickle.load(open('scaling.pkl','rb'))
+scalar=pickle.load(open('Scaling1.pkl','rb'))
 @app.route('/')
 def home():
         return render_template('home.html')
