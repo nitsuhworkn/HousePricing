@@ -9,7 +9,7 @@ REGmodel=pickle.load(open('Regretionmodel.pkl','rb'))
 scalar=pickle.load(open('Scaling1.pkl','rb'))
 @app.route('/')
 def home():
-        return render_template('home.html')
+    return render_template('home.html')
 
 @app.route('/predict_api',methods=['POST'])    
 
@@ -29,10 +29,7 @@ def predict():
     print(final_input)
     output=REGmodel.predict(final_input)[0]
     render_template("home.html",prediction_text="The Predicted House Price is: {}".format(output))
- 
-
-
-
+     
 if __name__=="__main__":
     app.run(debug=True)
 
