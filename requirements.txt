@@ -1,6 +1,5 @@
 Flask
 sklearn
 pandas
-numpay
+numpy
 matplotlib
-ipykernel
